@@ -5,7 +5,6 @@ def fact(n):
         return n * fact(n-1)
 
 #main program
-
 f = int(input("Enter the number your want the factorial of:"))
 factorial = fact(f)
 print(str(f)+"! is:",factorial)
