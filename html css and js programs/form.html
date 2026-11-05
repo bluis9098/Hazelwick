@@ -1,11 +1,13 @@
 <html>
     <head>
         <title>Rubbish title</title>
-        <link href="first.css" rel="stylesheet">
     </head>
     <body>
-        <form action="book.html">
-            Email:<input type="text" name="Email">
+        <form>
+            Email:<input type="text" name="Email" id ="Email">
+            num:<input type="text" name="num" id ="num">
+            Change <input type="text" name="change" id = "ch">
+            <button type="button" onclick="test()">Click to see the change</button>
             <br><br>
             <input type="submit" value="submit">
         </form>
@@ -15,5 +17,13 @@
             </p>
             
         </div>
+        <script>
+            function test() {
+                alert("Pressed")
+                var n = Number(document.getElementById("num").value);
+                var change = n+30;
+                document.getElementById("ch").value = change;
+            }
+        </script>
     </body>
 </html>
