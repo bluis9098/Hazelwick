@@ -1,3 +1,4 @@
 {
-	"editor.renderWhitespace": "all"
+	"editor.renderWhitespace": "all",
+	"python-envs.defaultEnvManager": "ms-python.python:system"
 }
