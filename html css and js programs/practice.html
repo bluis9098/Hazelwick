@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Jss Example</title>
+    </head>
+    <body>
+        <form>
+            Name:<input type="text" name="name" id="name"><br>
+            Age:<input type="text" name="age" id="age"><br>
+            <button type="button" onclick="test()">Click me to see the magic</button>
+        </form>
+        <script>
+            function test(){
+                var a = document.getElementById("age").ariaValueMax
+                if  (a > 21){
+                    alert("You are old enough to drink!")
+                }
+                else {
+                    alert("You are not!")
+                }
+            }
+        </script>
+    </body>
+</html>
