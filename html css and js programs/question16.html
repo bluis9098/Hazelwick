@@ -1,0 +1,22 @@
+
+
+<html>
+    <body>
+        <form>
+            How many bookings:<input type="text" id="bookings">
+            <button type="button" onclick="change()">Press</button><br><br>
+            <p id="note"></p>
+        </form>
+        <script>
+            function change(){
+                var book = Number(document.getElementById("bookings").value)
+                if (book >= 10){
+                    document.getElementById("note").innerHTML = "Group Booking"
+                }
+                else{
+                    document.getElementById("note").innerHTML = "Standard Booking"
+                }
+            }
+        </script>
+    </body>
+</html>

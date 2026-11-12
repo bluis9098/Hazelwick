@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>JSS page</title>
+    </head>
+    <body>
+        <form>
+            Name:<input type="text" name="n" id="n"><br><br>
+            Age:<input type="text" name="a" id="a"><br><br>
+            Age after 30:<input type="text" name="a30" id="a30"><br><br>
+            <button type="button" onclick="test()">Click here</button><br><br>
+            <p id="H">Major</p>
+            
+        </form>
+        <script>
+            function test(){
+                var b = document.getElementById("a").value
+                b = Number(b) + 30
+                document.getElementById("a30").value = b
+                document.getElementById("H").innerHTML = "Captain"
+                
+            }
+        </script>
+    </body>
+</html>
